@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>{$Think.config.NAME} - 首页</title>
+	<meta name="keywords" content="{$system.keyword}" />
+	<meta name="description" content="{$system.remark}" />
+	<meta name="version" content="{$Think.config.NAME} v{$version}" />
+	<meta name="author" content="{$system.author}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<include file="Public:nav"/>
+			<!--中部-->
+			<div class="row aerousel">
+				<ol class="breadcrumb">
+					  <li><a href="index.html">网站首页</a></li>
+					  <li class="active">开发工具&nbsp;|&nbsp;汉字-字符串转换</li>
+				</ol>
+				<div class="col-md-12">
+					工具箱：汉字-字符串转换
+					<p><span class="label label-danger">小提示</span>：JSON返回的值经常是\uxxxx，然后可以用这个工具转换成汉字</p>
+					<hr/>
+					<p>输入需要转换的值</p>
+					<hr/>
+					<p><textarea class="form-control" name="source" rows="10" id="source" style="width:100%"></textarea></p> 
+					<a href="javascript:action('CONVERT_FMT1')"><button class="btn btn-success">[ &#xxxx ] 格式</button></a>
+					<a href="javascript:action('CONVERT_FMT2')"><button class="btn btn-success">[ \uxxxx ] 格式</button></a>
+					<a href="javascript:action('RECONVERT')"><button class="btn btn-success">汉字</button></a>
+					<p> 
+					<div id="tt" style="display:none"></div>
+					<hr/> 
+					<p>转换后的值</p>
+					<hr/>
+					<textarea class="form-control" name="show2" rows="10" id="show2" style="width:100%"></textarea> 
+					</p> 
+				</div>
+			</div>
+		</div>
+		<include file="Public:foot"/>
+		<script language="javascript" type="text/javascript"> 
+			var oSource = document.getElementById("source"); 
+			var oShow2 = document.getElementById("show2"); 
+			var oTt = document.getElementById("tt"); 
+			function action(pChoice){ 
+			switch(pChoice){ 
+			case "CONVERT_FMT1": 
+			oShow2.value = ascii(oSource.value); 
+			break; 
+			case "CONVERT_FMT2": 
+			oShow2.value = unicode(oSource.value); 
+			break; 
+			case "RECONVERT": 
+			oShow2.value = reconvert(oSource.value); 
+			break; 
+			} 
+			} 
+			function ascii(str){ 
+			return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\&#x$2;")}); 
+			} 
+			function unicode(str){ 
+			return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\\u$2")}); 
+			} 
+			function reconvert(str){ 
+			str = str.replace(/(\\u)(\w{4})/gi,function($0){ 
+			return (String.fromCharCode(parseInt((escape($0).replace(/(%5Cu)(\w{4})/g,"$2")),16))); 
+			}); 
+			
+			str = str.replace(/(&#x)(\w{4});/gi,function($0){ 
+			return String.fromCharCode(parseInt(escape($0).replace(/(%26%23x)(\w{4})(%3B)/g,"$2"),16)); 
+			}); 
+			return str; 
+			} 
+		</script>
+	</body>
+</html>

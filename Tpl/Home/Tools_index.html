@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>{$Think.config.NAME} - 首页</title>
+	<meta name="keywords" content="{$system.keyword}" />
+	<meta name="description" content="{$system.remark}" />
+	<meta name="version" content="{$Think.config.NAME} v{$version}" />
+	<meta name="author" content="{$system.author}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<include file="Public:nav"/>
+			<!--中部-->
+			<div class="row aerousel">
+				<ol class="breadcrumb">
+					  <li><a href="index.html">网站首页</a></li>
+					  <li class="active">开发工具&nbsp;|&nbsp;工具</li>
+				</ol>
+				<!--左侧-->
+				<div class="col-md-8 row-l">
+					<a title="字符串/汉字转换" href="{:U('/tools_str')}" class="btn btn-success ">字符串/汉字转换</a>
+					<a title="Md5加密" href="{:U('/tools_md5')}" class="btn btn-success ">Md5加密</a>
+					<a title="Unix时间戳转换" href="{:U('/tools_unix')}" class="btn btn-success ">Unix时间戳转换</a>
+					<a title="浏览设备检测" href="{:U('/tools_machine')}" class="btn btn-success ">浏览设备检测</a>
+				</div>
+				<include file="Public:sider"/>
+		<include file="Public:foot"/>
+	</body>
+</html>

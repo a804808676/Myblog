@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{$Think.config.NAME} - 工具</title>
+		<meta name="keywords" content="{$system.keyword}" />
+		<meta name="description" content="{$system.remark}" />
+		<meta name="version" content="{$Think.config.NAME} v{$version}" />
+		<meta name="author" content="{$system.author}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<include file="Public:nav"/>
+			<!--中部-->
+			<div class="row aerousel">
+				<ol class="breadcrumb">
+					  <li><a href="index.html">网站首页</a></li>
+					  <li class="active">开发工具&nbsp;|&nbsp;工具</li>
+				</ol>
+				<div class="col-md-12">
+					工具箱：Unix时间戳转换
+					<p><span class="label label-danger">小提示</span>：Unix时间戳是从1970年1月1日（UTC/GMT的午夜）开始所经过的秒数，不考虑闰秒。</p>
+					<hr/>
+					<p>Unix时间戳转北京时间</p>
+					<hr />
+	                <form name="unix2beijing" action="" role="form" class="form-horizontal">
+	                	<div class="form-group">
+	                		<label for="inputEmail3" class="col-sm-2 control-label">当前Unix时间戳</label>
+	                		<div class="col-sm-5">
+	                    		<input type="text" name="timestamp" id="firstTimestamp" class="form-control">
+	                    	</div>
+	                   	</div>
+	                   	<div class="form-group">
+    						<div class="col-sm-offset-2 col-sm-5">
+      							<button type="button" onclick="unix2human();" class="btn btn-success">转换为北京时间</button>
+    						</div>
+  						</div>
+	                    <div class="form-group">
+	                		<label for="inputEmail3" class="col-sm-2 control-label">当前北京时间</label>
+	                		<div class="col-sm-5">
+	                    		<input type="text" name="result" class="form-control">
+	                    	</div>
+	                   	</div>
+	                </form>
+	                <hr>
+	                <p>北京时间转Unix</p>
+	                <hr />
+                <form name="beijing2unix" action="" role="form" class="form-horizontal" >
+                 	<div class="form-group">
+                 		<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的年份</label>
+                 		<div class="col-sm-5">
+                    		<input name="year" type="text" class="form-control unix"  maxlength="4">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的月份</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" class="form-control unix"  name="month" maxlength="2">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的日期</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" class="form-control unix" name="day" maxlength="2">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的小时</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" class="form-control unix"  name="hour" maxlength="2">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的分鈡</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" class="form-control unix" name="minute" maxlength="2">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">请输入需要转换的秒数</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" class="form-control unix"  name="second" maxlength="2">
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<div class="col-sm-offset-2 col-sm-5">
+                    		<button type="button" onclick="human2unix();" class="btn btn-success">转换为Unix时间戳</button>
+                    	</div>
+                    </div>
+                    <div class="form-group">
+                    	<label for="inputEmail3" class="col-sm-2 control-label">转换后的Unix时间戳</label>
+                    	<div class="col-sm-5">
+                    		<input type="text" name="result" class="form-control">
+                    	</div>
+                    </div>
+                </form>
+				</div>
+			</div>
+		</div>
+		<include file="Public:foot"/>
+
+        <script>
+            var currentTimeActive = 1;
+			var unixTimer = 0;
+			function unix2human() {
+			    var unixTimeValue = new Date(document.unix2beijing.timestamp.value * 1000);
+			    beijingTimeValue = unixTimeValue.toLocaleString();
+			    document.unix2beijing.result.value = beijingTimeValue;
+			}
+			function human2unix() {
+			    var humanDate = new Date(Date.UTC(document.beijing2unix.year.value, (stripLeadingZeroes(document.beijing2unix.month.value) - 1), stripLeadingZeroes(document.beijing2unix.day.value), stripLeadingZeroes(document.beijing2unix.hour.value), stripLeadingZeroes(document.beijing2unix.minute.value), stripLeadingZeroes(document.beijing2unix.second.value)));
+			    document.beijing2unix.result.value = (humanDate.getTime() / 1000 - 8 * 60 * 60);
+			}
+			function stripLeadingZeroes(input) {
+			    if ((input.length > 1) && (input.substr(0, 1) == "0")) {
+			        return input.substr(1);
+			    } else {
+			        return input;
+			    }
+			}
+			function currentTime() {
+			    var timeNow = new Date();
+			    document.getElementById("currentunixtime").innerHTML = Math.round(timeNow.getTime() / 1000);
+			    if (currentTimeActive) {
+			        unixTimer = setTimeout("currentTime()", 1000);
+			    }
+			}
+			function startTimer() {
+			    currentTimeActive = 1;
+			    currentTime();
+			}
+			function stopTimer() {
+			    currentTimeActive = 0;
+			    clearTimeout(unixTimer);
+			}
+			var oSource = document.getElementById("source"); 
+			var oShow2 = document.getElementById("show2"); 
+			var oTt = document.getElementById("tt"); 
+			function action(pChoice){ 
+			switch(pChoice){ 
+			case "CONVERT_FMT1": 
+			oShow2.value = ascii(oSource.value); 
+			break; 
+			case "CONVERT_FMT2": 
+			oShow2.value = unicode(oSource.value); 
+			break; 
+			case "RECONVERT": 
+			oShow2.value = reconvert(oSource.value); 
+			break; 
+			} 
+			} 
+			function ascii(str){ 
+			return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\&#x$2;")}); 
+			} 
+			function unicode(str){ 
+			return str.replace(/[^\u0000-\u00FF]/g,function($0){return escape($0).replace(/(%u)(\w{4})/gi,"\\u$2")}); 
+			} 
+			function reconvert(str){ 
+			str = str.replace(/(\\u)(\w{4})/gi,function($0){ 
+			return (String.fromCharCode(parseInt((escape($0).replace(/(%5Cu)(\w{4})/g,"$2")),16))); 
+			}); 
+			
+			str = str.replace(/(&#x)(\w{4});/gi,function($0){ 
+			return String.fromCharCode(parseInt(escape($0).replace(/(%26%23x)(\w{4})(%3B)/g,"$2"),16)); 
+			}); 
+			return str; 
+			} 
+		</script>
+				<script language="javascript" type="text/javascript"> 
+			var timeNow = new Date();
+            document.getElementById("firstTimestamp").value = Math.round(timeNow.getTime() / 1000);
+        </script>
+	</body>
+</html>

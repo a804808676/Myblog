@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title>{$Think.config.NAME} - 首页</title>
+	<meta name="keywords" content="{$system.keyword}" />
+	<meta name="description" content="{$system.remark}" />
+	<meta name="version" content="{$Think.config.NAME} v{$version}" />
+	<meta name="author" content="{$system.author}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<include file="Public:nav"/>
+			<!--中部-->
+			<div class="row aerousel">
+				<ol class="breadcrumb">
+					  <li><a href="index.html">网站首页</a></li>
+					  <li class="active">开发工具&nbsp;|&nbsp;设备检测</li>
+				</ol>
+				<div class="col-md-12">
+					工具箱：浏览设备检测
+					<p><span class="label label-danger">小提示</span>：设备检测获取你的设备代码来区分设备，如果你的设备在右上角不显示，请复制下面显示的代码留言告诉我，谢谢。</p>
+					<hr/>
+					<p>设备代码</p>
+					<hr/>
+					<p><textarea class="form-control" name="text" rows="10" id="test" style="width:100%">{$_SERVER['HTTP_USER_AGENT']}</textarea></p>
+					<hr/>
+					<p>你的设备<span class="from">{:getOs()}</span></p>
+				</div>
+			</div>
+		</div>
+		<include file="Public:foot"/>
+	</body>
+</html>

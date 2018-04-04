@@ -1,0 +1,1142 @@
+[ 2018-04-04T13:57:36+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_link` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_system` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_album` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_gust` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lt_picture` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lt_album_c` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say_c` [ RunTime:0.0020s ]
+SQL: SELECT `v_version` FROM `lt_version` ORDER BY v_id desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/96a32ec0a4fa9a548081313989245c72.php): No such file or directory D:\WWW\anxun\blog\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `lt_system` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say_c` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article_c` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album_c` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_gust` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_picture` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_link` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0030s ]
+SQL: SELECT `ac_time` FROM `lt_article_c` UNION ALL SELECT sc_time FROM lt_say_c  UNION ALL SELECT alc_time FROM lt_album_c order by ac_time desc limit 0,5 [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = 1486283901 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = 1486283901 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = 1486283901 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = 1486283651 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = 1486283651 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = 1486283651 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_gust` WHERE ( g_rtime>0 ) ORDER BY g_time desc LIMIT 5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 106 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 161 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 170 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 266 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 255 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T13:57:38+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_link` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_system` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_album` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_gust` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_picture` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lt_album_c` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say_c` [ RunTime:0.0010s ]
+SQL: SELECT `v_version` FROM `lt_version` ORDER BY v_id desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/96a32ec0a4fa9a548081313989245c72.php): No such file or directory D:\WWW\anxun\blog\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 106 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 161 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 170 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 266 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 255 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-04T14:03:02+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_link` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_system` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_album` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lt_gust` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_say` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_picture` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_album_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say_c` [ RunTime:0.0010s ]
+SQL: SELECT `v_version` FROM `lt_version` ORDER BY v_id desc LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] unlink(./Runtime/Temp/96a32ec0a4fa9a548081313989245c72.php): No such file or directory D:\WWW\anxun\blog\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `lt_system` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say_c` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_gust` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_picture` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_link` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SELECT `ac_time` FROM `lt_article_c` UNION ALL SELECT sc_time FROM lt_say_c  UNION ALL SELECT alc_time FROM lt_album_c order by ac_time desc limit 0,5 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = 1486283901 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = 1486283901 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = 1486283901 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = 1486283651 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = 1486283651 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = 1486283651 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_gust` WHERE ( g_rtime>0 ) ORDER BY g_time desc LIMIT 5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 106 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 161 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 170 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 266 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 255 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:23:22+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_link` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_system` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_album` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_gust` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `lt_say` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_picture` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_album_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_say_c` [ RunTime:0.0010s ]
+SQL: SELECT `v_version` FROM `lt_version` ORDER BY v_id desc LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [2] unlink(./Runtime/Temp/96a32ec0a4fa9a548081313989245c72.php): No such file or directory D:\WWW\anxun\blog\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+SQL: SELECT * FROM `lt_system` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say_c` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article_c` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album_c` LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_gust` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_picture` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_link` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0040s ]
+SQL: SELECT `ac_time` FROM `lt_article_c` UNION ALL SELECT sc_time FROM lt_say_c  UNION ALL SELECT alc_time FROM lt_album_c order by ac_time desc limit 0,5 [ RunTime:0.0020s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 1 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 1 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 2 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 3 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 46 行.
+SQL: SELECT * FROM `lt_article_c` WHERE `ac_time` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 47 行.
+SQL: SELECT * FROM `lt_album_c` WHERE `alc_time` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined offset: 4 D:\WWW\anxun\blog\Application\Admin\Controller\IndexController.class.php 第 48 行.
+SQL: SELECT * FROM `lt_say_c` WHERE `sc_time` = null LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `lt_gust` WHERE ( g_rtime>0 ) ORDER BY g_time desc LIMIT 5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 106 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 161 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 170 行.
+NOTIC: [8] Use of undefined constant ture - assumed 'ture' D:\WWW\anxun\blog\Runtime\Cache\Admin\edfa35e3053db16b24335984ed17aef4.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:20+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Say/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 100 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 170 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 215 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 232 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-04T14:26:22+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_tag` WHERE `t_view` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 100 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 105 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 131 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 170 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 213 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 231 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 253 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 260 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 277 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 278 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 279 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 286 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:23+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Version/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_version` ORDER BY v_id desc LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 100 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 106 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 170 行.
+NOTIC: [8] Use of undefined constant v_id - assumed 'v_id' D:\WWW\anxun\blog\Runtime\Cache\Admin\e4edc653d8fda18740989231f478c7e8.php 第 250 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:44+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Say/sayList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_say` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_say` ORDER BY s_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 107 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\c59cb49da3c598f56e409c31687d0442.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-04T14:26:45+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/articleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_article` ORDER BY a_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 107 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 113 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:46+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Version/versionList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_version` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_version` ORDER BY v_id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 107 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 114 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\70c215f2f89d5405f736fd2dd2692c30.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-04T14:26:48+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Say/sayContentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_say_c` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_say_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_say_c` ORDER BY sc_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 115 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\a6b77bf4873244618d9902c53d6005cc.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-04T14:26:49+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/articleContentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_article_c` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_article_c` ORDER BY ac_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 115 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 121 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\eacae9599e923555694f06ea1e36835e.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:50+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Gust/gustList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_gust` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_gust` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `lt_gust` ORDER BY g_id desc LIMIT 0,15   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 115 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 122 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\41b3b72882dd5f190e1c6c292a1d6870.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-04T14:26:51+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Album/albumContentList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_album_c` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_album_c` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_album_c` ORDER BY alc_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 115 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 123 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\471c3b4df3c281a607d6fdca15d8fab0.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:26:54+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Say/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 100 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 170 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 215 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 232 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\1c433912325c169502a8530d879cdc13.php 第 233 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-04T14:26:57+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `lt_tag` WHERE `t_view` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 100 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 105 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 107 行.
+NOTIC: [8] Undefined variable: list D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 110 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 114 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 131 行.
+NOTIC: [8] Array to string conversion D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 170 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 213 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 221 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 231 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 253 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 260 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 277 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 278 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 279 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 286 行.
+NOTIC: [8] Undefined variable: info D:\WWW\anxun\blog\Runtime\Cache\Admin\b7c8ec48f7ae0f5492e8b9d039ce0283.php 第 287 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-04T14:27:52+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/articleAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: validate D:\WWW\anxun\blog\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\WWW\anxun\blog\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `lt_article` (`a_title`,`a_remark`,`a_img`,`a_keyword`,`pid`,`a_time`,`a_content`,`a_view`,`a_hit`,`a_original`,`a_author`,`a_ip`,`a_from`) VALUES ('测试文章','测试','/anxun/blog/Upload/Thumb/1522823272.jpg','yield关键字','1','1522823217','<p>测测<img src=\"http://img.baidu.com/hi/jx2/j_0026.gif\"/></p>','1','5','1','沈耀国','127.0.0.1','Win 7') [ RunTime:0.0080s ]
+
+[ 2018-04-04T14:27:54+08:00 ] 127.0.0.1 /anxun/blog/admin.php/Article/articleList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `lt_article` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `lt_article` ORDER BY a_id desc LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 100 行.
+NOTIC: [8] Undefined variable: add D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 102 行.
+NOTIC: [8] Undefined variable: say D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 105 行.
+NOTIC: [8] Undefined variable: article D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 106 行.
+NOTIC: [8] Undefined variable: version D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 107 行.
+NOTIC: [8] Undefined variable: saylist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 113 行.
+NOTIC: [8] Undefined variable: versionlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 115 行.
+NOTIC: [8] Undefined variable: content D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 124 行.
+NOTIC: [8] Undefined variable: user D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 127 行.
+NOTIC: [8] Undefined variable: useradd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 130 行.
+NOTIC: [8] Undefined variable: userlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 131 行.
+NOTIC: [8] Undefined variable: tag D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 161 行.
+NOTIC: [8] Undefined variable: system D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 164 行.
+NOTIC: [8] Undefined variable: systembasic D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 167 行.
+NOTIC: [8] Undefined variable: systemone D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 168 行.
+NOTIC: [8] Undefined variable: systememail D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 169 行.
+NOTIC: [8] Undefined variable: systemppt D:\WWW\anxun\blog\Runtime\Cache\Admin\bf45b6d3e0440cfb2a3116d1c8a58bd4.php 第 170 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>下载 - {$Think.config.NAME}</title>
+		<meta name="keywords" content="{$keyword}" />
+	    <meta name="description" content="{$description}" />
+	    <meta name="version" content="{$foot['name']}  {$foot.version}" />
+	    <meta name="author" content="{$foot['author']}" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<include file="Public:nav"/>
+			<div class="row aerousel">
+				<ol class="breadcrumb">
+					  <li><a href="index.html">网站首页</a></li>
+					  <li class="active">下载&nbsp;|&nbsp;代码分享</li>
+				</ol>
+			<div class="clearfix tab-nav">
+				<volist name="down" id="v">
+				<div class="col-md-3 text-center">
+					<div class="thumbnail clearfix">
+						<div class="col-md-12" style="padding: 20px;border-bottom: 1px solid #D7D7D7;">{$v.d_name}</div>
+						<div class="col-md-12" style="padding: 10px;">
+							<input class="cid" type="hidden" value="{$v.d_id}" />
+							<a class="btn btn-sm btn-default inc-sum" href="{$v.d_url}" target="_blank">	
+							<span aria-hidden="true" class="glyphicon glyphicon-download-alt"></span>下载	</a>
+						</div>
+					</div>
+				</div>
+				</volist>
+			</div>
+		</div>
+		</div>
+		<include file="Public:foot"/>
+		<script>
+		$(document).ready(function(){
+			$('.inc-sum',this).click(function(){
+				var did = $(this).parents(".col-md-12").find(".cid").val();
+				$.ajax({
+					type:"post",
+					url:"Down/logs",
+					async:true,
+					data:{"id":did},
+					success:function(data){
+						console.log(data);
+					},
+					
+				});
+			});
+		});
+		</script>
+	</body>
+</html>

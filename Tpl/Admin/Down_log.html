@@ -1,0 +1,53 @@
+<include file="Public:header"/>			
+<div id="content">
+<div id="content-header">
+	<h1>下载</h1>
+	<div class="btn-group">
+		<a href="{:U('Admin/Down/index')}" class="btn btn-large" title="首页"><i class="fa fa-file"></i></a>
+		<a href="{:U('Admin/Down/log')}" class="btn btn-large" title="下载日志"><i class="fa fa-tasks"></i></a>
+	</div>
+</div>
+<div id="breadcrumb">
+	<a href="#" title="回到首页" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+	<a href="#" class="current">下载</a>
+</div>
+	<div class="row">
+		<div class="col-xs-12">		
+			<div class="widget-box">
+				<div class="widget-title">
+					<span class="icon">
+						<i class="fa fa-th"></i>
+					</span>
+					<h5>下载</h5>
+				</div>
+				<div class="widget-content">
+					<table class="table table-bordered table-striped table-hover">
+						<thead>
+							<tr>
+								<th width="5%">编号</th>
+								<th width="15%">程序名</th>
+								<th	width="15%">下载时间</th>
+								<th width="20%">下载系统</th>
+								<th width="20%">系在地址</th>
+							</tr>
+						</thead>
+						<tbody>
+							<volist name="list" id="k">
+							<tr>
+								<td class="id">{$k.downid}</td>
+								<td>{$k.downname}</td>
+								<td>{$k.downtime|getTime}</td>
+								<td>{$k.downfrom}</td>
+								<td>{$k.ip}</td>
+							</tr>
+							</volist>	
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/> 
+</body>
+</html>

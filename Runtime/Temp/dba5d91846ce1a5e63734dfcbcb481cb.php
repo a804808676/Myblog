@@ -1,0 +1,3 @@
+<?php
+//000000000010a:1:{i:0;a:18:{s:4:"a_id";s:1:"5";s:5:"a_img";s:39:"/anxun/blog/Upload/Thumb/1522823272.jpg";s:7:"a_title";s:12:"测试文章";s:8:"a_remark";s:6:"测试";s:9:"a_keyword";s:14:"yield关键字";s:3:"pid";s:1:"1";s:6:"a_time";s:10:"1522823217";s:9:"a_content";s:64:"<p>测测<img src="http://img.baidu.com/hi/jx2/j_0026.gif"/></p>";s:6:"a_view";s:1:"1";s:5:"a_hit";s:1:"6";s:10:"a_original";s:1:"1";s:6:"a_from";s:5:"Win 7";s:8:"a_author";s:9:"沈耀国";s:4:"a_ip";s:9:"127.0.0.1";s:6:"ac_pid";N;s:5:"ac_id";N;s:8:"ac_rtime";N;s:6:"ac_num";N;}}
+?>
