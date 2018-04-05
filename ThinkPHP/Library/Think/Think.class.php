@@ -282,8 +282,6 @@ class Think {
      * @return void
      */
     static public function halt($error) {
-        print_r($error);
-        exit();
         $e = array();
         if (APP_DEBUG || IS_CLI) {
             //调试模式下输出错误信息
