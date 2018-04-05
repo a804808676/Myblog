@@ -18,7 +18,7 @@ return array(
     'URL_MODEL' =>2,
     'URL_ROUTER_ON' => true,
     'URL_ROUTE_RULES' => array(
-    	'/^index$/'           	=>    'Index/index',
+    	'/^index$/'           	=>    'index/index',
         '/^about$/'           	=>    'About/index',
         '/^feel$/'            	=>  'Feel/index',
         '/^feel\/page\/(\d{1,})$/'  =>  'Feel/index?page=:1',
