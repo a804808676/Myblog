@@ -7,8 +7,8 @@
 */
 return array(
 	//错误页无法使用全局参数 请自行修改
-    'TMPL_EXCEPTION_FILE' => __ROOT__.'/Public/Html/404.html',
-    'TMPL_ACTION_ERROR'   => __ROOT__.'/Public/Html/404.html',
+    'TMPL_EXCEPTION_FILE' => __ROOT__.'/Public/Html/405.html',
+    'TMPL_ACTION_ERROR'   => __ROOT__.'/Public/Html/406.html',
 	'ERROR_PAGE'   =>  __ROOT__.'/Public/Html/404.html',
 //	'TMPL_PARSE_STRING' =>  array(
 //        '__JS__'    =>  '/Public/Js',
