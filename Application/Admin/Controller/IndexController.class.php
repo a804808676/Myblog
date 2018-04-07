@@ -53,7 +53,7 @@ class IndexController extends AuthController {
 		if(!$gusts = S('agusts')){$gusts = $Gust->where('g_rtime>0')->order('g_time desc')->limit(5)->select();setS("agusts", $gusts);}
 		$this->gusts = $gusts;
     	$this->assign("index","class='active'");
-    	$this->display();
+    	$this->display("Index");
     }
 	
 	public function out(){

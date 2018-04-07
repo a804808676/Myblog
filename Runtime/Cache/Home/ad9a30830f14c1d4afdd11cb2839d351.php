@@ -47,7 +47,7 @@
 	                        </div>
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                            	<ul class="nav navbar-nav">
-	                            <li class="<?php echo ($index); ?> dh"><a href="<?php echo U('/index');?>">首页</a></li>
+	                            <li class="<?php echo ($index); ?> dh"><a href="<?php echo U('index/index');?>">首页</a></li>
 	                            <!--<li class="<?php echo ($about); ?> dh"><a href="<?php echo U('/about');?>">关于我</a></li>-->
 	                            <li class="dropdown dh <?php echo ($class); ?>">
 	                              	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">分类<span class="caret"></span></a>
